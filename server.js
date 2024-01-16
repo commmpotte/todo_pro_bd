@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Подключение к MongoDB
+// mongodb + srv: //admin:admin@qr0.hsoth7y.mongodb.net/?retryWrites=true&w=majority
 const dbURI = 'mongodb+srv://admin:admin@qr0.hsoth7y.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(dbURI, {
     useNewUrlParser: true,
